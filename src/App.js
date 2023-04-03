@@ -9,14 +9,13 @@ import BookList from "./components/BookList";
 
 import fantasy from "./data/fantasy.json";
 import Welcome from "./components/Welcome";
-import CommentArea from "./components/CommentArea";
 
 function App() {
   return (
     <Container>
       <MyNav />
       <Welcome title="Welcome" subtitle="Epibooks" />
-      <CommentArea />
+
       {/* <AllTheBooks /> */}
       <BookList books={fantasy} />
 

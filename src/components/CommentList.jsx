@@ -5,14 +5,10 @@ const CommentList = props => {
   console.log(currentComments);
 
   if (currentComments.length < 1) {
-    return (
-      <Alert variant="info" className="mb-3">
-        Non ci sono commenti
-      </Alert>
-    );
+    return <Alert variant="info">There are no comments</Alert>;
   }
   return (
-    <ListGroup className="mb-3">
+    <ListGroup>
       {currentComments.map(comment => {
         return <ListGroup.Item>{comment.comment}</ListGroup.Item>;
       })}
