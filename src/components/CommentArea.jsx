@@ -3,8 +3,7 @@ import CommentList from "./CommentList";
 
 class CommentArea extends Component {
   state = {
-    comments: " ",
-    selected: false
+    comments: " "
   };
 
   componentDidMount = () => {
